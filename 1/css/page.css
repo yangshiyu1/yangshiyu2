@@ -1,0 +1,51 @@
+
+page{
+    font-size: 60px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+@keyframes c {
+    0% {opacity:0;}
+    20% {opacity:100;}
+    40% {opacity:0;}
+    100%{opacity:0;}
+}
+@keyframes x {
+    0% {opacity:0;}
+    20% {opacity:0;}
+    40% {opacity:100;}
+    60% {opacity:0;}
+    100%{opacity:0;}
+}
+@keyframes q {
+    0% {opacity:0;}
+    40% {opacity:0;}
+    60%{opacity:0;}
+    80% {opacity:100;}
+    100% {opacity:0;}
+}
+@keyframes d {
+    0% {opacity:0;}
+    20% {opacity:0;}
+    40% {opacity:0;}
+    60% {opacity:0;}
+    80% {opacity:0;}
+    100%{opacity:100;}
+}
+#c {
+    animation: c 5s infinite;
+}
+#x {
+    animation: x 5s infinite;
+}
+#q {
+    animation: q 5s infinite;
+}
+#d {
+    animation: d 5s infinite;
+}
+#z{
+    font-size: 60px;
+    display: block;
+}
