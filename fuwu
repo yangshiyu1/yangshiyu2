@@ -1,5 +1,5 @@
 var multiparty = require('multiparty')
-router.post('/upload',function (req,res) {
+router.post('/shuju',function (req,res) {
 //创建处理form表单的对象
     var form = new multiparty.Form({
         uploadDir: './images'
