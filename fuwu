@@ -1,0 +1,15 @@
+var multiparty = require('multiparty')
+router.post('/upload',function (req,res) {
+//创建处理form表单的对象
+    var form = new multiparty.Form({
+        uploadDir: './images'
+    })//文件上传的路径
+    //通过form.parse生成服务器文件，注意这里生成的文件名字不是原来的名字，而是编码后的名字,里面的回调包含错误信息，字段信息，文件信息
+    form.parse(req,function (err,fields,files) {
+        if(err) {throw err ;
+        console.log(err)}
+        else{
+            res.send(JSON.stringify(files.pic[0]))
+        }
+    })
+})
